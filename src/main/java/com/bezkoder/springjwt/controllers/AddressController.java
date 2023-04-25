@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bezkoder.springjwt.models.Address;
 import com.bezkoder.springjwt.repository.AddressRepository;
 
-@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600, allowCredentials = "true")
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/addresses")
 public class AddressController {
