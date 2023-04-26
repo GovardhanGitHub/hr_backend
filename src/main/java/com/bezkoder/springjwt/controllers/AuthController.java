@@ -32,8 +32,8 @@ import com.bezkoder.springjwt.repository.UserRepository;
 import com.bezkoder.springjwt.security.jwt.JwtUtils;
 import com.bezkoder.springjwt.security.services.UserDetailsImpl;
 
-// @CrossOrigin(allowCredentials = "true", origins = "http://localhost:4200", allowedHeaders = "*")
-@CrossOrigin(origins = "*", maxAge = 3600)
+// @CrossOrigin(allowCredentials = "true", origins = "http://210.18.189.94:8084", allowedHeaders = "*")
+@CrossOrigin(allowCredentials = "true", origins = "http://210.18.189.94:8084", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {

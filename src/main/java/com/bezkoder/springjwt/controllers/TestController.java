@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(allowCredentials = "true", origins = "http://210.18.189.94:8084", allowedHeaders = "*")
 @RestController
 @RequestMapping("/api/test")
 public class TestController {

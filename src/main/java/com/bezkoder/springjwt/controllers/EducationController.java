@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bezkoder.springjwt.models.Education;
 import com.bezkoder.springjwt.repository.EducationRepository;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(allowCredentials = "true", origins = "http://210.18.189.94:8084", allowedHeaders = "*")
 @RestController
 @RequestMapping("/education")
 public class EducationController {
